@@ -75,15 +75,15 @@
                                 <img src='images/coffee.png' alt='user' class='rounded-circle' width='40' height='40'>
                                 <h4>" . $reply['comment_by']. "</h4>";
                         echo "<span> upvotes: ".$reply['upvotes'] ."</span>";
-                        if(isset($_SESSION["username"])){
-                            echo "<div class = 'votes'>";
-                            echo "<form method = 'POST' action= '". update_upreply($conn)."'> 
-                            <input type='hidden' name = 'r_id' value = ". $reply['r_id'] .">
-                            <button name = 'rup_submit' style=' z-index:99999999999!important;'>like</button></form>";
-                            echo "<form method = 'POST' action= '". update_downreply($conn)."'> 
-                            <input type='hidden' name = 'r_id' value = ". $reply['r_id'] .">
-                            <button name = 'rdown_submit' style=' z-index:99999999999!important;'>dislike</button></form>";
-                            echo "</div>";}
+                        // if(isset($_SESSION["username"])){
+                        //     echo "<div class = 'votes'>";
+                        //     echo "<form method = 'POST' action= '". update_upreply($conn)."'> 
+                        //     <input type='hidden' name = 'r_id' value = ". $reply['r_id'] .">
+                        //     <button name = 'rup_submit' style=' z-index:99999999999!important;'>like</button></form>";
+                        //     echo "<form method = 'POST' action= '". update_downreply($conn)."'> 
+                        //     <input type='hidden' name = 'r_id' value = ". $reply['r_id'] .">
+                        //     <button name = 'rdown_submit' style=' z-index:99999999999!important;'>dislike</button></form>";
+                        //     echo "</div>";}
                         echo "<p>" . $reply['body'] . "</p>
                         </div>";
                         echo "</div>";
