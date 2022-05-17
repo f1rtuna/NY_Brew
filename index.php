@@ -1,10 +1,7 @@
 <?php   
     include './header.php';
-    // include './includes/dbh.inc.php';
+    include './includes/dbh.inc.php';
 ?>            
-<?php
-    session_start();
-?>
 
     <div class="background">
         <div class="body">
