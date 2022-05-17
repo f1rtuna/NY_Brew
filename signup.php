@@ -35,7 +35,7 @@
                   //check for super-global error and display accordingly
                   if(isset($_GET["error"])){
                     if($_GET["error"] == "none"){
-                      echo "<p>Congrat's you have signed up, login here</p>";
+                      echo "<p>Congrat's you have signed up, you can now login!</p>";
                     }
                     else if($_GET["error"] == "emptyinput"){
                       echo "<p>Fill in all fields</p>";
