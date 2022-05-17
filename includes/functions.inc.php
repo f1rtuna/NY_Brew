@@ -90,6 +90,46 @@ $last_name, $password, $profile){
     $last_name, $password, $profile);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
+
+
+    $sql2 = "INSERT INTO users_status (username, date_of_status,
+    status_name) 
+    values (?, ?, ?);";
+    $stmt2 = mysqli_stmt_init($conn);
+
+    if(!mysqli_stmt_prepare($stmt2, $sql2)){
+        header("location: ../signup.php?error=stmtfailed");
+        exit();
+    }
+
+    $decaf = "decaf";
+    $date = date('Y-m-d H:i:s');
+    //could user password_hash for security but kee simple
+    // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    mysqli_stmt_bind_param($stmt, "sss", $username, $date, $decaf);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
+
+    $sql3 = "INSERT INTO users_tally (username, answer_upvotes,
+    post_upvotes, brew_tally) 
+    values (?, ?, ?, ?);";
+    $stmt2 = mysqli_stmt_init($conn);
+
+    if(!mysqli_stmt_prepare($stmt2, $sql2)){
+        header("location: ../signup.php?error=stmtfailed");
+        exit();
+    }
+
+    $zero = 0;
+    
+    //could user password_hash for security but kee simple
+    // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    mysqli_stmt_bind_param($stmt, "siii", $username, $zero, $zero, $zero);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
+
     header("location: ../signup.php?error=none");
     exit();
 
