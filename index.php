@@ -14,7 +14,7 @@
                         <span class="input-group-text purple lighten-3" id="basic-text1"></span>
                         </div>
                         <form class = "search" action="./posts.php" method = "POST">
-                            <input class="form-control my-0 py-1" type="text" name = "search" placeholder="Search" aria-label="Search">
+                            <input class="form-control my-0 py-1" type="text" name = "search" placeholder="input category, complex name, or post title" aria-label="Search">
                             <button type="submit" name = "submit-search" class="btn btn-secondary">Search</button>
                         </form>
                         
