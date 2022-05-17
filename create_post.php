@@ -1,5 +1,5 @@
 <?php 
-    include_once 'header.php';
+    include_once './header.php';
 ?>
 
 
@@ -18,7 +18,7 @@
                     
                     <h1>Create post</h1>
                     
-                    <form action="includes/create_post.inc.php" method="POST">    		    
+                    <form action="./includes/create_post.inc.php" method="POST">    		    
                         <div class="form-group">
                             <label for="title">Title <span class="require">*</span></label>
                             <input type="text" class="form-control" name="title" />
@@ -75,5 +75,5 @@
 </div>
 
 <?php  
-    include 'footer.php'
+    include './footer.php'
 ?>

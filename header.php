@@ -27,26 +27,22 @@
     <!-- for the nav section -->
     <div class="topnav">
         <a class="active " id = "navbar__logo" href="index.php">
-            <img src="images/NY_Brew_logo.png" alt="logo">
+            <img src="./images/NY_Brew_logo.png" alt="logo">
         </a>
         <h4 class = "headline">WELCOME TO THE BREWERY</h4>
         <!-- see if user is logged in -->
         <?php
             if(isset($_SESSION["username"])){
                 echo "<div class=login-container>";
-                echo "<a href = 'profile.php' class = active>Profile</a>";
-                echo "<a href = 'includes/logout.inc.php' class = active>Log Out</a>";
+                echo "<a href = './profile.php' class = active>Profile</a>";
+                echo "<a href = './includes/logout.inc.php' class = active>Log Out</a>";
                 echo "</div>";
             }
             else{
                 echo "<div class=login-container>";
-                echo "<a href = 'login.php' class = active>Login</a>";
-                echo "<a href = 'signup.php' class = active>Sign-Up</a>";
+                echo "<a href = './login.php' class = active>Login</a>";
+                echo "<a href = './signup.php' class = active>Sign-Up</a>";
                 echo "</div>";
             }
         ?> 
-        <!-- <div class="login-container">
-            <a href = "login.php" class = "active">Login</a>
-            <a href = "signup.php" class = "active">Sign Up</a>
-        </div> -->
     </div>

@@ -15,7 +15,7 @@
 
                     <div class="upper">
 
-                        <img src="images/skyline.jpg" class="img-fluid" id = "skyline">
+                        <img src="./images/skyline.jpg" class="img-fluid" id = "skyline">
                         
                     </div>
 
@@ -23,7 +23,7 @@
 
                         <div class="profile">
 
-                        <img src="images/coffee.png" class="rounded-circle" width="80">
+                        <img src="./images/coffee.png" class="rounded-circle" width="80">
                         
                         </div>
 
@@ -92,5 +92,5 @@
 
 
 <?php  
-    include 'footer.php'
+    include './footer.php'
 ?>

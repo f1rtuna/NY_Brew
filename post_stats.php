@@ -1,7 +1,7 @@
 <?php   
-    include 'header.php';
-    include 'includes/dbh.inc.php';
-    include 'includes/comments.inc.php';
+    include './header.php';
+    include './includes/dbh.inc.php';
+    include './includes/comments.inc.php';
 ?>
 
 <div class="background">
@@ -166,5 +166,5 @@
                     } -->
 
 <?php  
-    include 'footer.php'
+    include './footer.php'
 ?>
