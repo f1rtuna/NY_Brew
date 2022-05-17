@@ -62,7 +62,7 @@ a, a:hover, a:focus, a:active {
 
   /* background */
   .background{
-    background: linear-gradient(to right, rgba(79, 79, 79, 0.35), rgba(82, 32, 32, 0.134)), url(./images/brewery.jpg);
+    background: linear-gradient(to right, rgba(79, 79, 79, 0.35), rgba(82, 32, 32, 0.134)), url("images/brewery.jpg");
     /* height: 94vh; */
     background-position: center;
     background-size: cover;
@@ -132,7 +132,7 @@ a, a:hover, a:focus, a:active {
 .highlander{
   position: relative;
   /* background-image: url("./images/highlander.jpg"); */
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.534)), url(./images/highlander.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.534)), url("images/highlander.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 70%;
@@ -143,7 +143,7 @@ a, a:hover, a:focus, a:active {
 
 .lofty_towers{
   position: relative;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.534)), url(./images/lofty_towers.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.534)), url("images/lofty_towers.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 70%;
@@ -154,7 +154,7 @@ a, a:hover, a:focus, a:active {
 
 .prestige{
   position: relative;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.534)), url(./images/prestige.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.534)), url("images/prestige.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 70%;
@@ -165,7 +165,7 @@ a, a:hover, a:focus, a:active {
 
 .city_heights{
   position: relative;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.534)), url(./images/city_heights.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.534)), url("images/city_heights.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 70%;
@@ -176,7 +176,7 @@ a, a:hover, a:focus, a:active {
 
 .all{
   position: relative;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.534)), url(./images/skyline.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.534)), url("images/skyline.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 70%;
